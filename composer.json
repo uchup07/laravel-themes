@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Uchup07\\LaravelThemes\\ThemesServiceProvider"
+                "Uchup07\\LaravelThemes\\LaravelThemesServiceProvider"
             ],
             "aliases": {
                 "Theme": "Uchup07\\LaravelThemes\\Facades\\Theme"
