@@ -1,0 +1,13 @@
+{
+    "name": "DummyPackageName",
+    "description": "DummyDescription",
+    "type": "uchup07-theme",
+    "autoload": {
+        "psr-4": {
+            "DummyEscapedNamespace\\": "src/"
+        }
+    },
+    "require": {
+        "uchup07/composer": "*"
+    }
+}
