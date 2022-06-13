@@ -14,7 +14,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Uchup07\\LaravelThemes\\": "packages/uchup07/laravel-themes/src/"
+            "Uchup07\\LaravelThemes\\": "src/"
         }
     },
     "extra": {
