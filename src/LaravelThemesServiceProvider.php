@@ -5,7 +5,7 @@ namespace Uchup07\LaravelThemes;
 use Illuminate\Support\ServiceProvider;
 use Uchup07\LaravelThemes\Manifest;
 use Uchup07\LaravelThemes\View\ThemeViewFinder;
-use Uchup\LaravelThemes\Console\GenerateTheme;
+use Uchup07\LaravelThemes\Console\GenerateTheme;
 
 class LaravelThemesServiceProvider extends ServiceProvider
 {   
