@@ -1,6 +1,6 @@
 <?php
 
-namespace Uchup\LaravelThemes\Console;
+namespace Uchup07\LaravelThemes\Console;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Console\Command;
