@@ -22,7 +22,7 @@ class LaravelThemesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('themes.php'),
+            __DIR__.'/../config/themes.php' => config_path('themes.php'),
         ], 'config');
     }
 
