@@ -18,6 +18,9 @@
     },
     "license": "MIT",
     "autoload": {
+        "files": [
+            "helpers/themes.php"
+        ],
         "psr-4": {
             "App\\": "app/",
             "Uchup07\\LaravelThemes\\": "src/"

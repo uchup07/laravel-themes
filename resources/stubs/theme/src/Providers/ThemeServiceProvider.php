@@ -15,6 +15,9 @@ class ThemeServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->mergeConfigFrom(
+            __DIR__.'/../../config/themes.php', 'themes'
+        );
         $this->app->register(RouteServiceProvider::class);
     }
 }
