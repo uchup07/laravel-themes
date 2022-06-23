@@ -4,7 +4,7 @@ namespace Uchup07\LaravelThemes\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Theme extends Facade {
+class LaravelThemes extends Facade {
     /**
 	 * Get the registered name of the component.
 	 *
