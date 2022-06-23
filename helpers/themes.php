@@ -10,6 +10,6 @@ if (! function_exists('theme_path')) {
      */
     function theme_path($file = '', $theme = null)
     {
-        return Theme::path($file, $theme);
+        return LaravelThemes::path($file, $theme);
     }
 }

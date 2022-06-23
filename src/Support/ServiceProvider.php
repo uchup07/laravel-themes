@@ -2,7 +2,7 @@
 
 namespace Uchup07\LaravelThemes\Support;
 
-use Uchup07\LaravelThemes\Facades\Theme;
+use Uchup07\LaravelThemes\Facades\LaravelThemes;
 use Uchup07\LaravelThemes\Concerns\GetsManifest;
 use SplFileInfo;
 use Symfony\Component\Finder\Finder;
@@ -16,9 +16,9 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         $slug = $this->getManifest()['slug'];
 
-        if (Theme::getCurrent() === $slug) {
-            $this->loadTranslationsFrom(Theme::path('resources/lang'), 'theme');
-            $this->loadViewsFrom(Theme::path('resources/views'), 'theme');
+        if (LaravelThemes::getCurrent() === $slug) {
+            $this->loadTranslationsFrom(LaravelThemes::path('resources/lang'), 'theme');
+            $this->loadViewsFrom(LaravelThemes::path('resources/views'), 'theme');
         }
     }
 

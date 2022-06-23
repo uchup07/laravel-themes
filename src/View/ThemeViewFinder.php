@@ -3,7 +3,7 @@
 namespace Uchup07\LaravelThemes\View;
 
 use Illuminate\View\FileViewFinder;
-use Uchup07\LaravelThemes\Facades\Theme;
+use Uchup07\LaravelThemes\Facades\LaravelThemes;
 
 class ThemeViewFinder extends FileViewFinder
 {
@@ -44,14 +44,14 @@ class ThemeViewFinder extends FileViewFinder
      */
     protected function addThemeNamespaceHints($namespace)
     {
-        $theme = Theme::getCurrent();
+        $theme = LaravelThemes::getCurrent();
 
         $hints   = array_reverse($this->hints[$namespace]);
-        $hints[] = Theme::path('resources/views/'.$namespace);
-        $hints[] = Theme::path('resources/views/vendor/'.$namespace);
+        $hints[] = LaravelThemes::path('resources/views/'.$namespace);
+        $hints[] = LaravelThemes::path('resources/views/vendor/'.$namespace);
 
         if (class_exists(\Caffeinated\Modules\ModulesServiceProvider::class)) {
-            $hints[] = Theme::path('resources/views/modules/'.$namespace);
+            $hints[] = LaravelThemes::path('resources/views/modules/'.$namespace);
         }
 
         $this->hints[$namespace] = array_reverse($hints);
