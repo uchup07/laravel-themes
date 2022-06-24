@@ -22,7 +22,7 @@ class LaravelThemesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/themes.php' => config_path('laravel-themes.php'),
+            __DIR__.'/../config/themes.php' => config_path('themes.php'),
         ], 'config');
     }
 
@@ -32,15 +32,10 @@ class LaravelThemesServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/themes.php', 'laravel-themes');
+        $this->mergeConfigFrom(__DIR__.'/../config/themes.php', 'themes');
 
         $this->registerServices();
 		$this->registerNamespaces();
-
-        // Register the main class to use with the facade
-        /* $this->app->singleton('laravel-themes', function () {
-            return new LaravelThemes;
-        }); */
 
         $this->commands([
             GenerateTheme::class
