@@ -4,9 +4,10 @@
     "keywords": [
         "uchup07",
         "laravel-themes",
-        "themes"
+        "themes",
+        "laravel",
+        "blade"
     ],
-    "type": "library",
     "require": {
         "php": "^7.4|^8.0|^8.1",
         "illuminate/support": "^8.0|^9.0"
@@ -37,9 +38,6 @@
             "vendor/bin/testbench package:discover --ansi"
         ]
 
-    },
-    "config": {
-        "sort-packages": true
     },
     "extra": {
         "laravel": {
